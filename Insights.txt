@@ -1,0 +1,79 @@
+Assignment 07: Classification Algorithms Model Building
+--------------------------------------------------------
+Tasks 1
+Perform feature selection
+-------------------------------------------------------------------------
+Feature selection was performed using SelectKBest and mutual information to identify the five most informative numerical features for predicting IsSuccessful. This reduces the feature set and helps focus the classification models on potentially useful predictors. The effectiveness of feature selection should be confirmed by comparing model performance with and without it.
+
+
+---------------------------------------------------------------------------------------------------
+
+Random Forest Classifier
+
+The Random Forest Classifier was trained to predict IsSuccessful using numerical features. Its performance was evaluated using accuracy, a classification report, and a confusion matrix. Class weighting was applied to help address potential class imbalance, and feature importance was calculated to identify the most influential predictors. Further improvements can be achieved through data preprocessing, hyperparameter tuning, and cross-validation.
+To make these insights specific to your dataset, share your printed accuracy, classification report, confusion matrix, and top 10 feature-importance scores. Those results are needed to determine how well the model performs and which features are most influential.
+
+--------------------------------------------------------------------------------------
+KNN
+
+The KNN model provides a distance-based approach to predicting success. Feature scaling is essential for reliable distance calculations, while hyperparameter tuning and cross-validation can help improve predictive performance. The model should be compared with other classifiers to determine which performs best on the test dataset.
+--------------------------------------------------------------------------------------
+Decision Tree
+
+The Decision Tree Classifier was trained to predict IsSuccessful using numerical features. Gini impurity was used for splitting, tree depth was limited to 10, and balanced class weights were applied. The model was evaluated using accuracy, a classification report, and a confusion matrix. Feature importance was also calculated to identify influential predictors. Hyperparameter tuning and cross-validation could further improve model performance.
+--------------------------------------------------------------------------------------
+Naive Bayes Classifier
+
+Naive Bayes provides a simple and efficient approach to predicting IsSuccessful. Its effectiveness should be determined using the actual evaluation metrics and comparison with other classification models.
+
+--------------------------------------------------------------------------------------
+Support Vector Machine (SVM)
+
+SVM is a powerful classification algorithm that can identify complex patterns in data. Feature scaling and the RBF kernel help it handle non-linear classification problems. Its effectiveness should be determined by examining the actual evaluation metrics and comparing its results with those of other models.
+
+--------------------------------------------------------------------------------------
+
+Task 3 – Model Evaluation
+
+Random Forest Classifier Accuracy & Support Vector Machine (SVM) are the two efficient models .
+
+------------------------------------------------------------------------------------------
+Task 4 –
+
+Apply Cross-Validation to evaluate model stability
+
+
+Five-fold cross-validation helps determine how consistently the SVM model predicts IsSuccessful. A high mean accuracy and low standard deviation generally indicate better and more stable performance. Actual results are needed to confirm the model's performance.
+
+------------------------------------------------------------------------------------------
+Perform Hyperparameter Tuning using GridSearchCV or RandomizedSearchCV
+
+
+GridSearchCV helps optimize SVM performance by selecting suitable hyperparameters. The final model should be evaluated on unseen test data to determine how well it generalizes to new observations.
+
+
+------------------------------------------------------------------------------------------
+Compare all classification models using evaluation metrics
+
+Hyperparameter tuning helps improve model performance and identify suitable settings for each classifier. Evaluating the tuned models on unseen test data is essential to select the most reliable model.
+------------------------------------------------------------------------------------------
+ Identify the best-performing model
+ 
+ 
+ Best Performing Model: SVM
+Accuracy : 0.9996
+Precision: 0.9996
+Recall   : 0.9996
+F1-Score : 0.9996
+ 
+ 
+------------------------------------------------------------------------------------------
+
+Discuss strengths, weaknesses, and possible improvements
+
+Comparing training and testing accuracy helps evaluate model performance and generalization. The final model should be selected based on its test results and overall classification performance.
+
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
